@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+	html,
+	body {
+		width: 100%;
+		height: 100%;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	div {
+		padding: 1px;
+	}
+</style>
+
+<body>
+	<div class="container" style="background-color: #1abc9c">
+		<div class="row justify-content-around align-items-strech">
+			<div class="col-12 text-white text-center">
+				<h2>Monto a Pagar</h2>
+			</div>
+			<div class="col-6 mb-3" style="background-color: white;border-radius: 3%">
+				<form class="pt-3" id="registro">
+					<div class="text-center">
+						<label id="usuario">Yo</label>
+					</div>
+					<div class="form-group">
+						<label>mi id</label>
+						<input type="text" class="form-control" name="idusuario" id="idusuario" value="" disabled>
+					</div>
+					<div class="text-center border-top pt-3">
+						<label> Contacto</label>
+					</div>
+					<div class="form-group">
+						<label>DNI</label>
+						<input type="text" class="form-control" name="nombre" id="dniContacto" value="" disabled>
+					</div>
+					<div class="text-center border-top pt-3">
+						<label>Pago</label>
+					</div>
+					<label>Monto</label>
+
+					<div class="form-group">
+						<input type="number" min="1" step="0.01" class="form-control" name="monto" id="monto"
+							value="1.00">
+					</div>
+					<div class="row form-group pt-3  text-center">
+						<button id="aceptarPago" type="button"
+							class=" col btn btn-warning pl-4 pr-4 p-2">Aceptar</button>
+						<div class="col-xs-12"></div>
+						<a href="usuario.html" class="col btn btn-danger pl-4 pr-4 p-2">Cancelar</a>
+					</div>
+			</div>
+			</form>
+		</div>
+	</div>
+	</div>
+
+	<script src="js/mainMonto.js"></script>
+</body>
+
+</html>

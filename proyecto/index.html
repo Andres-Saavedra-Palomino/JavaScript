@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+	<script src="js/sketch.js"></script>
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+	html,
+	body {
+		height: 100%;
+		width: 100%;
+		font-family: 'Montserrat', sans-serif;
+		color: #ecf0f1;
+		overflow: hidden;
+	}
+
+	.container {
+		height: 100%;
+		width: 100%;
+
+	}
+
+	.mirow {
+		height: 100%;
+		width: 100%;
+	}
+
+	form {
+		background-color: #c0392b;
+		padding: 15px;
+		border-radius: 5px;
+		border: 5px solid white;
+	}
+</style>
+
+<body>
+	<div class="container position-relative text-center">
+		<div class="row mirow ">
+			<div class="col-lg-6 col-md-9 col-sm-11 p-4 m-auto">
+				<form>
+					<div class="form-group row m-2">
+						<label for="inputEmail3" class="col-sm-2 col-form-label">User</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="usuario" placeholder="usuario" value="andres54">
+						</div>
+					</div>
+					<div class="form-group row m-2">
+						<label for="inputPassword3" class="col-sm-2 col-form-label">Pass</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="password" placeholder="Password"
+								value="70824454">
+						</div>
+					</div>
+					<div class="form-group row m-2">
+						<div class="col col-sm-10">
+							<button type="button" class="btn btn-primary p-2 pl-5 pr-5 mt-2" id="grabar">Sign
+								in</button>
+						</div>
+						<span class=" col alert alert-light mt-3" id="error" hidden>Datos Incorrectos</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/Usuario.js"></script>
+	<script src="js/mainLogin.js"></script>
+
+
+
+</body>
+
+</html>

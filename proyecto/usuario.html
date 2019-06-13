@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+	/* width */
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: #ecf0f1;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #bdc3c7;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #7f8c8d;
+	}
+
+	html,
+	body {
+		width: 100%;
+		height: 100%;
+		font-family: 'Montserrat', sans-serif;
+		color: #ecf0f1;
+	}
+
+	div {
+		padding: 1px;
+	}
+
+	.containerP {
+		max-width: 1200px;
+	}
+
+	.mirow {
+		min-height: 500px;
+		max-height: 500px;
+		overflow-y: scroll;
+	}
+</style>
+
+<body>
+	<div class="container containerP" style="background-color: #2c3e50">
+		<div class="row text-center mb-3 align-items-center">
+			<div class="col-lg-4 col-md-6 order-lg-1 ">
+				<h1>Mi Web</h1>
+			</div>
+			<div class="col-lg-4 col-md-12 order-lg-2 order-md-3 order-sm-3" id="cabeceraNombre"
+				style="background-color:#34495e">usuario.ejemplo</div>
+			<div class="col-lg-4 col-md-6 order-sm-3 order-lg-3 order-md-2 col-sm-12">
+				<button type="button" class="col btn btn-danger" onclick="cerrarSession()">Cerrar Session</button>
+			</div>
+		</div>
+		<div class="row pt-5 mb-5"></div>
+		<div class="row mb-5 pt-3 pb-3 align-items-center " style="background-color: #34495e">
+			<div class="offset-lg-2 offset-md-2 offset-sm-2 col-lg-4 col-md-3 col"><button type="button"
+					class="btn btn-warning p-2 pl-5 pr-5" id="usuarioAContacto">Agregar Contacto</button>
+			</div>
+			<div class=" offset-lg-2 offset-md-2  col-lg-4 col-md-3 col"><a href="historial.html"
+					class="btn btn-light p-2 pl-5 pr-5">Historial</a>
+			</div>
+		</div>
+		<div class="row mb-3">
+			<h3 class="offset-2 col-8">Lista de Contactos</h3>
+		</div>
+
+		<div class="row " style="color:#2c3e50">
+			<div class="offset-2 col-8 rounded m-auto pt-2 overflow" style="background-color:#34495e">
+				<ul class="col mirow " id="listaContactos">
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<footer class="col mt-5" style="background-color:#34495e ">
+				<div class="footer-copyright text-center py-3">© 2018 Copyright:
+					<a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+				</div>
+			</footer>
+
+		</div>
+	</div>
+	<script src="js/mainUsuario.js"></script>
+
+
+</body>
+
+</html>
