@@ -12,7 +12,6 @@ class Usuario {
 		fetch(url, configuracion)
 			.then((data) => { return data.json() })
 			.then((data) => {
-				console.log(data)
 				if (data) {
 					localStorage.miusuario = valor1
 					localStorage.mipassword = valor2

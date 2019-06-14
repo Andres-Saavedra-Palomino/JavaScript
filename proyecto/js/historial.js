@@ -1,6 +1,5 @@
 let user = localStorage.getItem('mipassword')
 document.getElementById('idusuario').textContent = localStorage.getItem('miusuario')
-console.log(user)
 let historialT_url = 'https://sminnova.com/restapitrujillo/registro/transaccion_listado'
 let listHisto = document.getElementById('listaHistorial')
 
@@ -14,12 +13,9 @@ const config = {
 historial = () => {
 	fetch(historialT_url, config)
 		.then(data => {
-			console.log(data)
 			return data.json()
 		})
 		.then(data => {
-			console.table(data)
-
 			let esquema = ""
 			for (const i in data) {
 				if (i >= 0) {

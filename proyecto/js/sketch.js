@@ -8,12 +8,6 @@ function setup() {
 	canvas.style('z-index', '-1');
 	canvas.style('background-color', '#2980b9');
 }
-/* function windowResized() {
-	resizeCanvas(windowWidth, windowHeight)
-	setup()
-	x = 0;
-	y = 0;
-} */
 
 function draw() {
 	strokeWeight(10);

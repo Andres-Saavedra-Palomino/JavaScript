@@ -1,9 +1,7 @@
 let pass = localStorage.getItem('mipassword')
 let usuario = localStorage.getItem('miusuario')
 let dniContacto = localStorage.getItem('contactodni')
-console.log(usuario)
-console.log(pass)
-console.log(dniContacto)
+
 document.getElementById('usuario').textContent = usuario
 let aceptarPago = document.getElementById('aceptarPago')
 let cancelarPago = document.getElementById('cancelarPago')
@@ -26,7 +24,6 @@ aceptarPago.addEventListener('click', () => {
 	fetch(transac_url, config)
 		.then(data => { return data.json() })
 		.then(data => {
-			console.log(data)
 			window.location = 'usuario.html'
 		})
 })
