@@ -8,9 +8,7 @@ let listaContactos = document.getElementById('listaContactos')
 cabecera.textContent = user
 
 btnUAC.addEventListener('click', () => {
-	setTimeout(() => {
-		window.location = './agregarContacto.html'
-	}, 1000);
+	window.location = './agregarContacto.html'
 })
 cerrarSession = () => {
 	window.location = './index.html'

@@ -1,11 +1,5 @@
 class Contacto {
-	constructor() {
-		this.nombre = ''
-		this.apellido = ''
-		this.dni = ''
-		this.telefono = ''
-		this.idusuario = ''
-	}
+	constructor() { }
 
 	agregarContacto(a, b, c, d, e) {
 		let url = "https://sminnova.com/restapitrujillo/registro/contacto";
@@ -26,11 +20,6 @@ class Contacto {
 			})
 			.then((data) => {
 				if (data) {
-					this.nombre = data.nombre
-					this.apellido = data.apellido
-					this.telefono = data.telefono
-					this.dni = data.dni
-					this.idusuario = data.idusuario
 					window.location = "usuario.html";
 				} else {
 					alert("datos ingresados de manera incorrecta");
